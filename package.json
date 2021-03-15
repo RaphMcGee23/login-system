@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "devStart": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node -r dotenv/config server.js dotenv_config_path=.env"
   },
   "author": "",
   "license": "ISC",
