@@ -5,17 +5,27 @@ Content-Type: application/json
 
 {
   "username": "Raphael",
-  "password": "raphael1"
+  "password": "raphael1",
+  "email": "raphaelmcgee@gmail.com"
 }
 ###
 GET http://localhost:3000/login/604f5226a55b8414205561c3
 ###
 DELETE http://localhost:3000/login/604f5226a55b8414205561c3
 ###
-PATCH http://localhost:3000/login/604f55a7dab6511af8fa243e
+PATCH http://localhost:3000/login/604f6e548f454c36b0076a6e
 Content-Type: application/json
 
 {
   "username": "Ralphonzo",
   "password": "ralph123"
+}
+###
+POST http://localhost:3000/user/
+Content-Type: application/json
+
+{
+  "username": "Raphael",
+  "password": "raphael1",
+  "email": "raphaelmcgee@gmail.com"
 }

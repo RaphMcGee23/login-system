@@ -22,6 +22,9 @@ app.use(express.json());
 const loginRouter = require('./routes/login');
 app.use('/login', loginRouter);
 
+const lserRouter = require('./routes/User');
+app.use('/user', lserRouter);
+
 app.listen(process.env.PORT || 3000, () => {
   console.log('Server running on port 3000');
 })
