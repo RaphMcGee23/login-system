@@ -1,0 +1,21 @@
+GET http://localhost:3000/login/
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "Raphael",
+  "password": "raphael1"
+}
+###
+GET http://localhost:3000/login/604f5226a55b8414205561c3
+###
+DELETE http://localhost:3000/login/604f5226a55b8414205561c3
+###
+PATCH http://localhost:3000/login/604f55a7dab6511af8fa243e
+Content-Type: application/json
+
+{
+  "username": "Ralphonzo",
+  "password": "ralph123"
+}
